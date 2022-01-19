@@ -28,6 +28,8 @@ jobs:
       with:
         ruby-version: 2.6
         bundler-cache: true
+    - name: "Bundle Install"
+      run: bundle install
     - name: "Build Site"
       working-directory: ./blog
       run: bundle exec jekyll build

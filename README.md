@@ -1,8 +1,10 @@
-# sinbeard-blog
+# Sinbeard's Blog
+
+[![Sinbeard Blog CI/CD](https://github.com/m3chanical/sinbeard-blog/actions/workflows/blog-build.yml/badge.svg)](https://github.com/m3chanical/sinbeard-blog/actions/workflows/blog-build.yml)
 
 Major work in progress. Below are basically a bunch of notes I took
 
-Learning Terraform and AWS
+## Learning Terraform and AWS
 
 I registered a brand new domain with AWS - sinbeard.net
 

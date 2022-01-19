@@ -28,9 +28,8 @@ jobs:
       with:
         ruby-version: 2.6
         bundler-cache: true
-    - name: "cd to blog dir"
-      run: cd ./blog
     - name: "Build Site"
+      working-directory: ./blog
       run: bundle exec jekyll build
       env:
         JEKYLL_ENV: production

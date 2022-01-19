@@ -28,9 +28,11 @@ jobs:
       with:
         ruby-version: 2.6
         bundler-cache: true
+    - name: "cd to blog dir"
+      run: cd ./blog
     - name: "Build Site"
       run: bundle exec jekyll build
       env:
         JEKYLL_ENV: production
     - name: "Deploy to AWS S3"
-      run: aws s3 sync --size-only ./_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }}
+      run: aws s3 sync --size-only ./blog/_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }}

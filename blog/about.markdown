@@ -1,18 +1,15 @@
----
-layout: page
-title: About
-permalink: /about/
----
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<div style="text-align: center">
+  <img src="{{site.baseurl}}/assets/images/pirate-avatar_animated_x3.gif" alt="The Cyber Pirate. Yarrrr!">
+</div>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# About Me
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I am an electrical engineer who is interested in embedded reverse engineering, exploit
+development, and anything cyber security related. I know a bit about
+many things and in general I'm interested in simply learning.
+
+This page is a major work in progress right now, but I intend to make
+pages on this blog of the various projects I get up to. Well, it is pretty much a constant work in progress so eh. 
 
 
-[jekyll-organization]: https://github.com/jekyll

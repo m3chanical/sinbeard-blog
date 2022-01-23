@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "minimal-mistakes/skins/default";
 @import "{{ site.theme }}";
 
 @font-face { font-family: "unscii"; src: url("../fonts/unscii-16-full.woff") format('woff'); }

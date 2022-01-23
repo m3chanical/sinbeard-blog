@@ -28,7 +28,8 @@ twitter_username: m3chanical
 github_username:  m3chanical
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
 

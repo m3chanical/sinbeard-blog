@@ -9,10 +9,6 @@ Week 5!
 # Threads
 
 It is an instance of a function executing code.
-It owns
-    * 
-
-
 
 ## Creating Threads
 

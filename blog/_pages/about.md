@@ -1,5 +1,6 @@
 ---
 Title: whoami
+permalink: /about/
 ---
 
 <div style="text-align: center">

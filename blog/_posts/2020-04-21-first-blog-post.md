@@ -1,6 +1,6 @@
 ---
 title: "First Blog Post"
-author: "canderson"
+author: "sinbeard"
 date: 2020-04-21 22:20:49
 ---
 

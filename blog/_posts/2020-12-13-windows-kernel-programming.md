@@ -1,6 +1,6 @@
 ---
 title: "Windows Kernel Programming"
-author: "canderson"
+author: "sinbeard"
 date: 2020-12-13 00:14:43
 tags: kernel
 ---

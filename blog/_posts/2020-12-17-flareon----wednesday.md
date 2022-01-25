@@ -1,6 +1,6 @@
 ---
 title: "FlareOn 2020 - Wednesday"
-author: "canderson"
+author: "sinbeard"
 date: 2020-12-17 17:50:27
 ---
 

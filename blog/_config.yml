@@ -62,7 +62,7 @@ timezone: America/New_York
 author:
   name      : "sinbeard"
   avatar    : "/assets/images/pirate-avatar_animated_x3.gif"
-  bio       : "electrical and cyber security engineer and things"
+  bio       : "a bad engineer"
   location  : "earth i guess"
   links     :
     - label: "Twitter"

@@ -1,6 +1,6 @@
 ---
 title: "flareon-garbage"
-author: "canderson"
+author: "sinbeard"
 date: 2020-12-16 22:31:43
 tags: flareon
 ---

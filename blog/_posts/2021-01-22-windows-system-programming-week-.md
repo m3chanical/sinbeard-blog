@@ -1,6 +1,6 @@
 ---
 title: "windows system programming week 2"
-author: "canderson"
+author: "sinbeard"
 date: 2021-01-22 08:47:44
 ---
 

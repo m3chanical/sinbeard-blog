@@ -1,6 +1,6 @@
 ---
 title: "Windows GUI Programming Adventure"
-author: "canderson"
+author: "sinbeard"
 date: 2020-12-04 19:50:21
 tags: gui
 ---

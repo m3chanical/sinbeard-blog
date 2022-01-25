@@ -1,0 +1,13 @@
+sinbeard:
+  name    : "sinbeard"
+  avatar    : "/assets/images/pirate-avatar_animated_x3.gif"
+  bio       : "a bad engineer"
+  location  : "earth i guess"
+  links     :
+    - label: "Twitter"
+      icon: "fab a-fw fa-twitter-square"
+      url: "https://twitter.com/m3chanical"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/m3chanical"
+

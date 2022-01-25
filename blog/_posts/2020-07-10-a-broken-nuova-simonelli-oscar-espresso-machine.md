@@ -1,6 +1,6 @@
 ---
 title: "A Broken Nuova Simonelli Oscar Espresso Machine"
-author: "canderson"
+author: "sinbeard"
 date: 2020-07-10 18:47:11
 tags: espresso
 ---

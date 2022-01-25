@@ -1,6 +1,6 @@
 ---
 title: "windows system programming week 3 and 4"
-author: "canderson"
+author: "sinbeard"
 date: 2021-01-30 08:02:07
 ---
 

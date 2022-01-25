@@ -65,7 +65,7 @@ author:
   location  : "earth i guess"
   links     :
     - label: "Twitter"
-      icon: "fas fa-fw fa-twitter-square"
+      icon: "fab a-fw fa-twitter-square"
       url: "https://twitter.com/m3chanical"
     - label: "Github"
       icon: "fab fa-fw fa-github"

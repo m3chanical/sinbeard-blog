@@ -49,7 +49,6 @@ defaults:
       show_date: true
       read_time: true
 
-paginate: 8
 timezone: America/New_York
 
 author:

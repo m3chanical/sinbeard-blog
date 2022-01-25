@@ -18,20 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tinkering Blog
+title: "Tinkering Blog"
+subtitle: "disassemble!"
 email: sinbeard@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Knowing is not enough; we must apply. Willing is not enough; we must do.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
+repository: "m3chanical/sinbeard-blog"
 url: "https://sinbeard.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: m3chanical
 github_username:  m3chanical
+logo: "/assets/images/pirate-avatar__x3.png"
 
 # Build settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "neon"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
+
+search: true
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -42,13 +42,14 @@ search: true
 defaults:
   # _posts
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       layout: single
       author_profile: true
       show_date: true
       read_time: true
+  # _pages
   - scope:
       path: "_pages"
       type: pages

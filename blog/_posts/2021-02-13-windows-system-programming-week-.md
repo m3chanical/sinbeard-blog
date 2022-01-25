@@ -1,7 +1,9 @@
 ---
 title: "windows system programming week 5 and 6"
-author: "canderson"
+author: "sinbeard"
 date: 2021-02-13 07:11:24
+categories:
+    - blog
 ---
 
 Week 5! 

@@ -31,11 +31,12 @@ github_username:  m3chanical
 logo: "/assets/images/pirate-avatar__x3.png"
 
 # Build settings
+markdown: kramdown
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark"
+permalink: /:categories/:title/
 plugins:
   - jekyll-feed
-
 search: true
 
 defaults:

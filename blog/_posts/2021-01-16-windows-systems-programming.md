@@ -1,6 +1,6 @@
 ---
 title: "windows systems programming week 1"
-author: "canderson"
+author: "sinbeard"
 date: 2021-01-16 07:06:21
 ---
 

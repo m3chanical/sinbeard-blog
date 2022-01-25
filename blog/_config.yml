@@ -44,8 +44,26 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
+      author_profile: true
       show_date: true
       read_time: true
+
+paginate: 8
+timezone: America/New_York
+
+author:
+  name      : "sinbeard"
+  avatar    : "/assets/images/pirate-avatar_animated_x3.gif"
+  bio       : "electrical and cyber security engineer and things"
+  location  : "earth i guess"
+  links     :
+    - label: "Twitter"
+      icon: "fas fa-fw fa-twitter-square"
+      url: "https://twitter.com/m3chanical"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/m3chanical"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

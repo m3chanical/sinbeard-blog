@@ -1,5 +1,5 @@
 ---
-Title: whoamie
+Title: whoami
 ---
 
 <div style="text-align: center">

@@ -5,6 +5,8 @@ date: 2022-02-12 11:47:25
 ---
 
 I'm working on a little self contained solar charged lithium battery for use while camping, off-grid, etc. Will add more later, but for now, here are photos:
+I'm also waiting on some acrylic sheets and associated items to arrive so I can build a case for this thing. I thought it'd be fun to mount all of this in a translucent box instead of plywood.
+It'll be a lot more work and I'll have to learn a few more things so it should be an interesting task.
 
 ![](/assets/images/solar_6.png)
 

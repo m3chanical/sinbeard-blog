@@ -24,7 +24,7 @@ editor=vim
 folder=_posts/
 
 # Author
-author="canderson"
+author="sinbeard"
 
 ########## Program ##########
 

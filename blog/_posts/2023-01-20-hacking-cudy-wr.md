@@ -49,7 +49,7 @@ I used Ghidra mostly when looking at binaries. I haven't worked with much mipsel
 
 Cudy appears to be a relatively new manufacturer of cheap routers and can be easily obtained from Amazon which makes it a really interesting and easily accessible device to test. The router was shipped with version 1.7.4 of Cudy's software. The latest version available on the website is 1.13.6. [OpenWRT](https://openwrt.org/toh/hwdata/cudy/cudy_wr2100) has a build for the WR2100 and has a bunch of information about the board, including UART information. It has two radio chips, one for 5ghz and one for 2.4ghz. I did not look into these, nor did I perform any wireless attacks, as much as I'd have liked to. The antennas were a pain to detach. They were friction fit onto the plastic router body, and removing them required a lot of force (and punching myself in the face. Oops). 
 
-![Cudy uses Mediatek CPUs and a SPI flash for data](/assets/images/router/routerpcb)
+![Cudy uses Mediatek CPUs and a SPI flash for data](/assets/images/router/routerpcb.png)
 
 The headers for the serial interface are visible, which the OpenWRT page has labeled for us. Two unpopulated resistors are nearby the headers which indicates that the serial interface is electrically disconnected. Again the OpenWRT page has some information for us - either short them or place some low value resistors. I took some 22 awg solidcore wire, stripped it, and soldered them to the pads. It was messy and a terrible job, but it worked. I would have rather used some 0402 resistors, but I didn't have any on hand. 
 
@@ -63,7 +63,7 @@ After hooking up the serial and verifying its overall function, I turned to extr
 
 Since I wasn't exactly sure how to extract the flash and what method would work best for me, I googled. I came across a blog post written by [River Loop Security](https://www.riverloopsecurity.com/blog/2020/02/hw-101-spi/), a group of people I know fairly well as it turns out. Their blog post was super useful and used a Raspberry Pi with flashrom to extract the flash. I grabbed the RPi I use for Octoprint and flashed a new copy of Raspbian (or whatever it is these days), hooked up some jumper wires to the SPI pins, stole my logic analyzers clips (I bought a SOIC8 chip clip though after this), and hooked it up. I used the flashrom command indicated in River Loop's post and success! Firmware! Worked first try. 
 
-![Flashrom!](/assets/images/router/flashrom)
+![Flashrom!](/assets/images/router/flashrom.png)
 
 # The Firmware
 

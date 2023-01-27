@@ -49,25 +49,25 @@ I used Ghidra mostly when looking at binaries. I haven't worked with much mipsel
 
 Cudy appears to be a relatively new manufacturer of cheap routers and can be easily obtained from Amazon which makes it a really interesting and easily accessible device to test. The router was shipped with version 1.7.4 of Cudy's software. The latest version available on the website is 1.13.6. [OpenWRT](https://openwrt.org/toh/hwdata/cudy/cudy_wr2100) has a build for the WR2100 and has a bunch of information about the board, including UART information. It has two radio chips, one for 5ghz and one for 2.4ghz. I did not look into these, nor did I perform any wireless attacks, as much as I'd have liked to. The antennas were a pain to detach. They were friction fit onto the plastic router body, and removing them required a lot of force (and punching myself in the face. Oops). 
 
-[Cudy uses Mediatek CPUs and a SPI flash for data](/assets/images/router/routerpcb)
+![Cudy uses Mediatek CPUs and a SPI flash for data](/assets/images/router/routerpcb)
 
 The headers for the serial interface are visible, which the OpenWRT page has labeled for us. Two unpopulated resistors are nearby the headers which indicates that the serial interface is electrically disconnected. Again the OpenWRT page has some information for us - either short them or place some low value resistors. I took some 22 awg solidcore wire, stripped it, and soldered them to the pads. It was messy and a terrible job, but it worked. I would have rather used some 0402 resistors, but I didn't have any on hand. 
 
 The pinout can also be determined by a multimeter and inspecting the plating. Ground pins usually have several connections to the ground plane of the board, so a cross or something similar will be present to verify the pin. Using a multimeter reveals 3.3v on the upper most pin. For the TX/RX pins I lazily swapped my USB serial cable's TX/RX until it worked. At 115200 baud 8N1 with the "resistors" attached (with hardware flow control diabled in minicom, so we can send data back), u-boot serial data is present. I also soldered some headers in order to ensure a reliable electrical connection
 
-[PCBites are amazing](/assets/images/router/pcbite.png)
+![PCBites are amazing](/assets/images/router/pcbite.png)
 
 After hooking up the serial and verifying its overall function, I turned to extracting the flash. I'd never actually ripped flash from a chip like this before so it was an interesting exercise. The u-boot startup output revealed the part number of the SPI flash - W25Q128 SOIC-8 package. A quick google revealed a digikey listing of the chip along with a datasheet. Most importantly, this allowed me to get the pinout. As a side note, it seems that pinouts in standard chips tend to match really closely from manufacturer to manufacturer. Therefore, if a datasheet weren't available, proper datat might be gleaned from other chips. I hooked up a logic analyzer to the chip and labeled the signals in the Saleae software. I turned the board on and watched the output and indeed I'd found the correct output. 
 
-[Raspberry Pi hooked up for SPI extract](/assets/images/router/rpi_spi.jpg)
+![Raspberry Pi hooked up for SPI extract](/assets/images/router/rpi_spi.jpg)
 
 Since I wasn't exactly sure how to extract the flash and what method would work best for me, I googled. I came across a blog post written by [River Loop Security](https://www.riverloopsecurity.com/blog/2020/02/hw-101-spi/), a group of people I know fairly well as it turns out. Their blog post was super useful and used a Raspberry Pi with flashrom to extract the flash. I grabbed the RPi I use for Octoprint and flashed a new copy of Raspbian (or whatever it is these days), hooked up some jumper wires to the SPI pins, stole my logic analyzers clips (I bought a SOIC8 chip clip though after this), and hooked it up. I used the flashrom command indicated in River Loop's post and success! Firmware! Worked first try. 
 
-[Flashrom!](/assets/images/router/flashrom)
+![Flashrom!](/assets/images/router/flashrom)
 
 # The Firmware
 
-[Firmware Extract!](/assets/images/router/binwalk_cudy.png)
+![Firmware Extract!](/assets/images/router/binwalk_cudy.png)
 
 Binwalk verified that the firmware extraction worked as expected. 
 
